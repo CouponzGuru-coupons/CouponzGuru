@@ -1,5 +1,178 @@
-@import "tailwindcss";
-
-@theme {
-  --font-display: "Helvetica", "sans-serif";
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Body and Text */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #005f73;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.cta-btn {
+    background-color: #f4a261;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e76f51;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #005f73;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0a9396;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
